@@ -10,8 +10,8 @@ const Certifications = () => {
   const certifications = [
     {
       title: 'Python Programming',
-      issuer: 'iTech Academy',
-      year: '2022',
+      issuer: 'ITech Academy',
+      year: '2027',
       image: 'itech python certificate.jpg',
     },
     {
@@ -21,87 +21,104 @@ const Certifications = () => {
       image: 'astroweb solution.jpg',
     },
     {
-      title: 'Full-Stack Development',
-      issuer: 'NSIC Chennai',
-      year: '2024',
-      image: 'nsic.jpg',
+      title: 'Front-End Pathway',
+      issuer: 'Scrimba',
+      year: '2023',
+      image: 'Scrimba.jpg',
     },
     {
-      title: 'Java Programming',
-      issuer: 'NPTEL',
-      year: '2025',
-      image: 'nptel.png',
+      title: 'HTML, CSS and Bootstrap',
+      issuer: 'Great Learning',
+      year: '2023',
+      image: 'html certificate.jpg',
     },
     {
-      title: 'Full Stack Course Completion',
-      issuer: 'Oranium Tech',
-      year: '2025',
-      image: 'full stack course completion.png',
+      title: 'React JS',
+      issuer: 'Great Learning',
+      year: '2023',
+      image: 'react certificate.jpg',
     },
     {
-      title: 'AI Prompt Engineering',
-      issuer: 'MindLuster',
-      year: '2024',
-      image: 'ai roadmap prompter.jpg',
+      title: 'JavaScript',
+      issuer: 'Great Learning',
+      year: '2023',
+      image: 'javascript certificate.jpg',
     },
   ]
 
-  return (
-    <section id="certifications" ref={ref} className="py-12 sm:py-16 md:py-20 lg:py-28 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6 text-gray-900 dark:text-white">
-            Certifications & <span className="text-primary-600 dark:text-primary-400">Learning</span>
-          </h2>
-          <div className="w-16 sm:w-24 h-1 bg-primary-600 dark:bg-primary-400 mx-auto mb-8 sm:mb-12"></div>
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  }
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={cert.title}
-                initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
-              >
-                <div className="relative h-64 bg-gray-200 overflow-hidden">
-                  <img
-                    src={`/images/${cert.image}`}
-                    alt={cert.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    onError={(e) => {
-                      e.target.style.display = 'none'
-                      const placeholder = e.target.nextElementSibling
-                      if (placeholder) placeholder.style.display = 'flex'
-                    }}
-                  />
-                  <div className="hidden absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 items-center justify-center text-white">
-                    <div className="text-center">
-                      <FaCertificate size={48} className="mb-4 mx-auto" />
-                      <p className="font-semibold text-lg">{cert.title}</p>
-                    </div>
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  }
+
+  return (
+    <section id="certifications" className="py-20">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            My
+            <span className="text-primary"> Certifications</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Professional certifications and achievements in web development
+          </p>
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          variants={container}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {certifications.map((cert, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              whileHover={{ y: -10 }}
+              className="bg-card rounded-xl p-6 border border-primary/20 hover:border-primary/50 transition-all"
+            >
+              <div className="mb-4 relative h-48 rounded-lg overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/${cert.image}`}
+                  alt={cert.title}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="space-y-2">
+                <div className="flex items-start gap-2">
+                  <FaCertificate className="text-primary text-xl mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold">{cert.title}</h3>
+                    <p className="text-gray-400">{cert.issuer}</p>
+                    <p className="text-sm text-primary">{cert.year}</p>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                    {cert.title}
-                  </h3>
-                  <p className="text-primary-600 dark:text-primary-400 font-medium">
-                    {cert.issuer}
-                  </p>
-                  {cert.year && (
-                    <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
-                      {cert.year}
-                    </p>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>
@@ -109,4 +126,3 @@ const Certifications = () => {
 }
 
 export default Certifications
-
