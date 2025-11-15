@@ -137,14 +137,7 @@ const Hero = () => {
               >
                 View Projects
               </a>
-              <a
-                href="/Naresh_Ramamoorthi_Resume.pdf"
-                download="Naresh_Ramamoorthi_Resume.pdf"
-                className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Download Resume
-              </a>
-            </motion.div>
+              motion.div>
           </motion.div>
 
           {/* Right Image */}
