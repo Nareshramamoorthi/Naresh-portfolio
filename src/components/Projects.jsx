@@ -22,7 +22,7 @@ const Projects = () => {
         'Machine learning model that predicts student performance with 98% accuracy using supervised learning (Linear Regression).',
       techStack: ['Python', 'ML', 'Colab'],
       image: 'student.png',
-      githubLink: 'https://github.com/Nareshramamoorthi/Machine_Learning_Project',
+      githubLink: 'https://github.com/Nareshramamoorthi/student-risk-analyzer-ai',
     },
     {
       title: 'TRAFFIC MANAGEMENT SYSTEM',
