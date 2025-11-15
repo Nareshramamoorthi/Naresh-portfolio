@@ -11,7 +11,7 @@ const Certifications = () => {
     {
       title: 'Python Programming',
       issuer: 'ITech Academy',
-      year: '2027',
+      year: '2022',
       image: 'itech python certificate.jpg',
     },
     {
@@ -21,28 +21,28 @@ const Certifications = () => {
       image: 'astroweb solution.jpg',
     },
     {
-      title: 'Front-End Pathway',
-      issuer: 'Scrimba',
-      year: '2023',
-      image: 'Scrimba.jpg',
+      title: 'Full-Stack Development',
+      issuer: 'NSIC Chennai',
+      year: '2024',
+      image: 'nsic.jpg',
     },
     {
-      title: 'HTML, CSS and Bootstrap',
-      issuer: 'Great Learning',
-      year: '2023',
-      image: 'full stack course completion.png',
-    },
-    {
-      title: 'React JS',
-      issuer: 'Great Learning',
-      year: '2023',
+      title: 'Java Programming',
+      issuer: 'NPTEL',
+      year: '2025',
       image: 'nptel.png',
     },
     {
-      title: 'JavaScript',
-      issuer: 'Great Learning',
-      year: '2023',
-      image: 'nsic.jpg',
+      title: 'Full Stack Course Completion',
+      issuer: 'Oranium Tech',
+      year: '2025',
+      image: 'full stack course completion.png',
+    },
+    {
+      title: 'AI Prompt Engineering',
+      issuer: 'MindLuster',
+      year: '2024',
+      image: 'ai roadmap prompter.jpg',
     },
   ]
 
