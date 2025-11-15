@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { HiArrowDown } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import DownloadResume from './DownloadResume'
 
 const Hero = () => {
   const roles = ['Web Developer', 'UI/UX Designer', 'Full-Stack Developer', 'Creative Problem Solver']
@@ -138,7 +137,13 @@ const Hero = () => {
               >
                 View Projects
               </a>
-              <DownloadResume />
+              <a
+                href="/Naresh_Ramamoorthi_Resume.pdf"
+                download="Naresh_Ramamoorthi_Resume.pdf"
+                className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Download Resume
+              </a>
             </motion.div>
           </motion.div>
 
@@ -195,3 +200,4 @@ const Hero = () => {
 }
 
 export default Hero
+
