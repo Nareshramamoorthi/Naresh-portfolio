@@ -21,7 +21,7 @@ const Projects = () => {
       description:
         'Machine learning model that predicts student performance with 98% accuracy using supervised learning (Linear Regression).',
       techStack: ['Python', 'ML', 'Colab'],
-      image: 'ML-Image.png',
+      image: 'student.png',
       githubLink: 'https://github.com/Nareshramamoorthi/Machine_Learning_Project',
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
       description:
         'A fully functional ATM Bank Application built using Java Swing and JDBC. Features include login/signup, balance inquiry, deposit/withdraw, mini statement, pin change, and fast cash functionality.',
       techStack: ['Java', 'Java Swing', 'JDBC', 'MySQL'],
-      image: 'Atm.png',
+      image: 'traffic.png',
       githubLink: 'https://github.com/Nareshramamoorthi/ATM-Bank',
       deployedLink: null,
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       description:
         'Management System Application built using Java Swing and AWT, designed to streamline company operations. Features include employee management (add, view, update, remove), user authentication, interactive forms, navigation, and employee information management.',
       techStack: ['Java', 'Java Swing', 'AWT', 'Java'],
-      image: 'Company.png',
+      image: 'learning.png',
       githubLink: 'https://github.com/Nareshramamoorthi/Company-Management-System',
     },
   ]
