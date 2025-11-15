@@ -30,19 +30,19 @@ const Certifications = () => {
       title: 'HTML, CSS and Bootstrap',
       issuer: 'Great Learning',
       year: '2023',
-      image: 'html certificate.jpg',
+      image: 'full stack course completion.png',
     },
     {
       title: 'React JS',
       issuer: 'Great Learning',
       year: '2023',
-      image: 'react certificate.jpg',
+      image: 'nptel.png',
     },
     {
       title: 'JavaScript',
       issuer: 'Great Learning',
       year: '2023',
-      image: 'javascript certificate.jpg',
+      image: 'nsic.jpg',
     },
   ]
 
