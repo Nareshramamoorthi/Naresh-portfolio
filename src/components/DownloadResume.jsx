@@ -5,7 +5,7 @@ const DownloadResume = () => {
   const downloadResume = () => {
     // Create a link element to download the PDF
     const link = document.createElement('a')
-    link.href = `${window.location.origin}/Naresh_Ramamoorthi_Resume.pdf`
+    link.href = ``${import.meta.env.BASE_URL}Naresh_Ramamoorthi_Resume.pdf`
     link.download = 'Naresh_Ramamoorthi_Resume.pdf'
     document.body.appendChild(link)
     link.click()
