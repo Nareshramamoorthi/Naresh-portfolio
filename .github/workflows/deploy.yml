@@ -33,9 +33,7 @@ jobs:
     - name: Build
       run: npm run build
 
-          - name: Copy Resume PDF to dist
-            run: cp public/Naresh_Ramamoorthi_Resume.pdf dist/
-      
+                  
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
