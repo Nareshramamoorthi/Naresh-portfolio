@@ -25,21 +25,21 @@ const Projects = () => {
       githubLink: 'https://github.com/Nareshramamoorthi/Machine_Learning_Project',
     },
     {
-      title: 'ATM BANK APPLICATION',
+      title: 'TRAFFIC MANAGEMENT SYSTEM',
       description:
-        'A fully functional ATM Bank Application built using Java Swing and JDBC. Features include login/signup, balance inquiry, deposit/withdraw, mini statement, pin change, and fast cash functionality.',
-      techStack: ['Java', 'Java Swing', 'JDBC', 'MySQL'],
+        'An AI-powered system to detect and record traffic violations using surveillance footage. Implements real-time vehicle tracking, license plate recognition, and rule-based violation detection for smarter road safety and enforcement.',
+      techStack: ['Python', 'OpenCV', 'Gradio', 'Colab'],
       image: 'traffic.png',
-      githubLink: 'https://github.com/Nareshramamoorthi/ATM-Bank',
+      githubLink: 'https://github.com/Nareshramamoorthi/traffic-violation-detection-system',
       deployedLink: null,
     },
     {
-      title: 'COMPANY MANAGEMENT SYSTEM',
+      title: 'LEARNING MANAGEMENT SYSTEM',
       description:
-        'Management System Application built using Java Swing and AWT, designed to streamline company operations. Features include employee management (add, view, update, remove), user authentication, interactive forms, navigation, and employee information management.',
-      techStack: ['Java', 'Java Swing', 'AWT', 'Java'],
+        'A lightweight and responsive Learning Management System (LMS) web application designed for efficient course management and content delivery. Built with clean HTML, CSS, and JavaScript, it provides a solid foundation for scalable education platforms.',
+      techStack: ['HTML', 'CSS', 'JavaScript'],
       image: 'learning.png',
-      githubLink: 'https://github.com/Nareshramamoorthi/Company-Management-System',
+      githubLink: 'https://github.com/Nareshramamoorthi/learning-management-system-webapp',
     },
   ]
 
