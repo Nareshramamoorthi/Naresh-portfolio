@@ -153,7 +153,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-600 rounded-3xl transform rotate-6 blur-2xl opacity-20"></div>
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-200 flex items-center justify-center mx-auto md:mx-0">
                 <img
-                  src="/images/Screenshot-2025-09-25-134946.png"
+                  src={`${import.meta.env.BASE_URL}images/Screenshot-2025-09-25-134946.png`}
                   alt="Profile"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -195,4 +195,3 @@ const Hero = () => {
 }
 
 export default Hero
-
